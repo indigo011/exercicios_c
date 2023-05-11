@@ -6,7 +6,7 @@ int main(){
     int i, n, soma = 0;
     setlocale(0, "Portuguese");
 
-    printf("Digite um expoente inteiro e positivo.\nO programa calculará o somatório de 3^0 a 3^n, sendo n o expoente informado.");
+    printf("Digite um expoente inteiro e positivo.\nO programa calculará o somatório de 3^0 a 3^n, sendo n o expoente informado: ");
     scanf("%d", &n);
 
     if (n < 0)
