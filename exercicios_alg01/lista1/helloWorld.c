@@ -1,17 +1,15 @@
-//circumference & area of a circle calculator
 #include <stdio.h>
-#include <math.h>
-#define PI 3.1415
+
+char[] maioridade(int x) {
+    return x >= 18 ? "Maior" : "Menor";
+}
 
 int main() {
-    float C, r, A;
+    int idade;
 
-    printf("Enter the circle radius (the radius of a circle is the half length of its diameter): ");
-    scanf("%f", &r);
+    printf("Entre com sua idade: ");
+    scanf("%d", &idade);
 
-    C = 2*r*PI;
-    A = PI * pow(r, 2);
-
-    printf("\nCircumference: %.3f\nArea: %.3f", C, A);
+    maioridade(idade);
     return 0;
 }
