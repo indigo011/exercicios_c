@@ -43,24 +43,27 @@ int main() {
                 verificadorErro = 1;
                 system("pause");
             }
-                
+
+            else {
+                if (mes[0] > mes[1] || (mes[0] > 12 || mes[0] < 1) || (mes[1] > 12 || mes[1] < 1)) {
+                    printf("\nMes(s) inicial e/ou final invalido(s).\n");
+                    verificadorErro = 1;
+                    system("pause");
+                }
+
+                else {
+                    if (dia[0] > dia[1] || (dia[0] > 31 || dia[0] < 1) || (dia[1] > 31 || dia[1] < 1)) {
+                        printf("\nDia(s) inicial e/ou final invalido(s).\n");
+                        verificadorErro = 1;
+                        system("pause");
+                    }
+
+                    else
+                        else
+                        verificadorErro = 0;
+                }
+            }    
             
-            else if (mes[0] > mes[1] || (mes[0] > 12 || mes[0] < 1) || (mes[1] > 12 || mes[1] < 1)) {
-                printf("\nMes(s) inicial e/ou final invalido(s).\n");
-                verificadorErro = 1;
-                system("pause");
-            }
-                
-            
-            else if (dia[0] > dia[1] || (dia[0] > 31 || dia[0] < 1) || (dia[1] > 31 || dia[1] < 1)) {
-                printf("\nDia(s) inicial e/ou final invalido(s).\n");
-                verificadorErro = 1;
-                system("pause");
-            }
-            
-            else
-                verificadorErro = 0;
-  
         } while (verificadorErro == 1);
         
         //inicializando variaveis
