@@ -1,4 +1,21 @@
 #include <stdio.h>
+<<<<<<< HEAD
+#include <string.h>
+//#include <string.h>
+
+int main() {
+    char nome[25];
+    char sobrenome[25];
+
+    printf("Digite o seu nome: ");
+    fgets(nome, 25, stdin);
+    nome[strlen(nome)-1] = ' ';
+    printf("Digite o seu sobrenome: ");
+    fgets(sobrenome, 25, stdin);
+
+    strcat(nome, sobrenome);
+    puts(nome);
+=======
 #include <locale.h>
 //teste de vetores
 int main() {
@@ -24,5 +41,6 @@ int main() {
     else
         printf("Você foi aprovado.");
 
+>>>>>>> ff30528fd2dfbc79bf529b87fb33b037afaaf2ab
     return 0;
 }
